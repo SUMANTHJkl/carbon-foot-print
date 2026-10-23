@@ -112,26 +112,19 @@ cd ..
 ```
 
 ### Step 5: Launch the Application
+**Option A: One-Command Full-Stack Dev Mode (FastAPI + Vite Hot Reload)**
+```bash
+# From workspace root OR from frontend directory:
+npm run dev
+```
+*This automatically starts the Python FastAPI backend on `http://127.0.0.1:8000` and the Vite React frontend on `http://localhost:5173` simultaneously.*
 
-**Option A: Unified Server (FastAPI serves both API and React frontend)**
+**Option B: Unified Server (FastAPI serves both API and React frontend)**
 ```bash
 $env:PYTHONPATH="."
 python -m backend.app.main
 ```
 Open **`http://localhost:8000`** in your browser.
-
-**Option B: Full-Stack Dev Mode (FastAPI + Vite Hot Reload)**
-- Backend terminal:
-  ```bash
-  $env:PYTHONPATH="."
-  python -m uvicorn backend.app.main:app --port 8000 --reload
-  ```
-- Frontend terminal:
-  ```bash
-  cd frontend
-  npm run dev
-  ```
-Open **`http://localhost:5173`** in your browser.
 
 ---
 

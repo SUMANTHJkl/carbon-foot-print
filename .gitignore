@@ -1,24 +1,7 @@
-# Copilot Cockpit local workspace files
+# Local IDE & tooling configurations
+.vscode/
+.github/
 .copilot-cockpit-logs/
-.vscode/.gitignore
-.vscode/mcp.json
-.vscode/scheduler.private.json
-.vscode/scheduler-config.lock*/
-.vscode/scheduler-config.transaction.json
-.vscode/copilot-cockpit.db
-.vscode/copilot-cockpit.db-migration.json
-.vscode/copilot-cockpit.private.json
-.vscode/copilot-cockpit/
-.vscode/cockpit-prompt-backups/
-.vscode/cockpit-input-uploads/
-.vscode/scheduler-prompt-backups/
-.vscode/scheduler-history/
-.vscode/copilot-cockpit-support/
-.github/hooks/
-.github/agents/todos/
-.github-scheduler-backups/
-.github/cockpit-prompt-backups/
-.github/scheduler-prompt-backups/
 
 # Node & Frontend
 node_modules/

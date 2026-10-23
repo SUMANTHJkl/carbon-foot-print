@@ -1,0 +1,13 @@
+{
+  "name": "coalcarbon-india",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Carbon Footprint Intelligence for India's Coal Thermal Power Stations",
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "dev:backend": "python -m uvicorn backend.app.main:app --port 8000 --reload",
+    "dev:frontend": "npm --prefix frontend run dev:frontend",
+    "build": "npm --prefix frontend run build",
+    "test": "pytest backend/tests"
+  }
+}
